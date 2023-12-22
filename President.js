@@ -1,17 +1,11 @@
 //redirection using open() function 
 function algeria(){  
-open("file:///storage/emulated/0/WebDevelopment/Algeria/Algeria.html");
+open("https://salmandascript.github.io/MyPresident/Algeria.html");
 }
 
 function angola(){  
 open("https://salmandascript.github.io/MyPresident/Angola.html");
 }
-
-//redirection using Redirect() function 
-function Algeria(){
-window.location="https://salmandascript.github.io/MyPresident/Algeria.html";
-}
-
 
 
 function myFunction() {
