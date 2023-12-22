@@ -4,7 +4,7 @@ open("https://salmandascript.github.io/Algeria/algeria.html");
 }
 
 function angola(){  
-open("https://salmandascript.github.io/MyPresident/Angola.html");
+open("https://salmandascript.github.io/Algeria/Angola.html");
 }
 
 
