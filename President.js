@@ -7,6 +7,14 @@ function angola(){
 open("https://salmandascript.github.io/Angola/Angola.html");
 }
 
+function benin(){  
+open("https://salmandascript.github.io/Benin/Benin.html");
+}
+
+function botswana(){  
+open("https://salmandascript.github.io/Botswana/Botswana.html");
+}
+
 
 function myFunction() {
   // Declare variables
