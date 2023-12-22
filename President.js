@@ -1,6 +1,6 @@
 //redirection using open() function 
 function algeria(){  
-open("https://salmandascript.github.io/MyPresident/Algeria.html");
+open("https://salmandascript.github.io/MyPresident/algeria.html");
 }
 
 function angola(){  
