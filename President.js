@@ -213,7 +213,7 @@ open("https://salmandascript.github.io/Zambia/Zambia.html");
 }
 
 function zimbabwe(){  
-open("https://salmandascript.github.io/Zimbabwe/Zimbabwe.html");
+open("https://salmandascript.github.io/Zimbabwe/");
 }
 
 function myFunction() {
