@@ -18,6 +18,7 @@
     <link rel="icon" type="image" href="flagMap.png"/>
 	 
 	 <link rel="stylesheet" href="President.css" type="text/css"/>
+	 
 	  <link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
 	  
 	  <style>
@@ -41,11 +42,14 @@ img{
     border-radius: 25px;
     padding: 1px;
 	 		}
+	 		h3,p{
+	 			text-align:center;
+	 		}
 </style>
 	  
  </head>
  
-	 <body >
+	 <body>
 	<nav role="navigation" class="navbar navbar-default navbar-fixed; level"> 
 <!-- Brand and toggle get grouped for better mobile display --> 
 <div class="navbar-header"> 
@@ -60,18 +64,18 @@ img{
 <!-- Collection of nav links and other content for toggling --> 
 <div id="navbarCollapse" class="collapse navbar-collapse"> 
 <ol class="nav navbar-nav"> 
-<li><a href="file:///storage/emulated/0/Webdevelopment/myPortal/myPortal.html">
+<li><a onclick="africaOnline();">
 	<img class="picture" src="home.png"/>
 	Home</a></li>
 	
-<li><a href="file:///storage/emulated/0/Webdevelopment/about/help.html"><img class="picture" src="helpp.png"/>
+<li><a onclick="help();"><img class="picture" src="helpp.png"/>
 	Help</a></li>
 	
-<li><a href="file:///storage/emulated/0/Webdevelopment/about/about.html">	<img class="picture" src="about.png"/> About</a></li>
+<li><a onclick="about();"><img class="picture" src="about.png"/> About</a></li>
  
-<li><a href="file:///storage/emulated/0/Webdevelopment/about/contact.html"><img class="picture" src="contact.png"/> Contact</a></li>
+<li><a onclick="contact();"><img class="picture" src="contact.png"/> Contact</a></li>
 
-<li><a href="file:///storage/emulated/0/Webdevelopment/about/termsOfService.html">
+<li><a onclick="termsOfService();">
 	<img class="picture" src="about.png"/>  Terms of Services</a></li> 
 </ol></nav>
 
@@ -80,7 +84,29 @@ img{
  
 <ol id = "myUL">&nbsp;
 
-	<!--redirection using open() function-->
+	<!--redirection using open()function-->
+	
+	<!--instruction modal-->
+<div id="myModalE" class="modal fade" >
+<div class="modal-dialog; modal-sm"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>--> 
+<h3 class="modal-title">IMPORTANT NOTICE.</h3> 
+</div> 
+<div class="modal-body; level"> 
+<p>Greetings & welcome, 27 countries are presented, the rest will follow (2024). Click randomly or guess, contact me, if you may have any information or suggestions. The information herein is after, any of these countries uttained their independence.</p> 
+
+</div> 
+<div class="modal-footer"> 
+<button type="button" class="btn btn-warning btn-sm" data-dismiss="modal">Close &times;
+</button> 
+</div> 
+</div> 
+</div> 
+</div>
+<!--instruction modal-->
+	
 <li><a onclick="algeria();">ALGERIA</a></li>&nbsp;
 
 <li><a onclick="angola();">ANGOLA</a></li>&nbsp;
@@ -101,17 +127,17 @@ img{
 
 <li><a onclick="chad();">CHAD</a></li>&nbsp;
 
+<li><a onclick="comoros();">COMOROS</a></li>&nbsp;
+
 <li><a onclick="drc();">D.R.C.</a></li>&nbsp;
 
-<li><a onclick="republicOfCongo():">REPUBLIC OF THE CONGO</a></li>&nbsp;
-
-<li><a onclick="djibout();">DJIBOUT</a></li>&nbsp;
+<li><a onclick="djibouti();">DJIBOUTI</a></li>&nbsp;
 
 <li><a onclick="egypt();">EGYPT</a></li>&nbsp;
 
 <li><a onclick="equatorialGuinea();">EQUATORIAL GUINEA</a></li>&nbsp;
 
-<li><a onclick="eriteria();">ERITREA</a></li>&nbsp;
+<li><a onclick="eritrea();">ERITREA</a></li>&nbsp;
 
 <li><a onclick="eswatini();">ESWATINI</a></li>&nbsp;
 
@@ -127,7 +153,7 @@ img{
 
 <li><a onclick="guineaBissau();">GUINEA BISSAU</a></li>&nbsp;
 
-<li><a onclick="ivoryCost();">IVORY COAST</a></li>&nbsp;
+<li><a onclick="ivoryCoast();">IVORY COAST</a></li>&nbsp;
 
 <li><a onclick="kenya();">KENYA</a></li>&nbsp;
 
@@ -147,7 +173,7 @@ img{
 
 <li><a onclick="mauritius();">MAURITIUS</a></li>&nbsp;
 
-<li><a onclick="moroco();">MOROCO</a></li>&nbsp;
+<li><a onclick="morocco();">MOROCCO</a></li>&nbsp;
 
 <li><a onclick="mozambique();">MOZAMBIQUE</a></li>&nbsp;
 
@@ -157,6 +183,8 @@ img{
 
 <li><a onclick="nigeria();">NIGERIA</a></li>&nbsp;
 
+<li><a onclick="rcongo();">REPUBLIC OF THE CONGO</a></li>&nbsp;
+
 <li><a onclick="rwanda();">RWANDA</a></li>&nbsp;
 
 <li><a onclick="saoTome();">SAO TOME & PRINCIPE</a></li>&nbsp;
@@ -165,7 +193,7 @@ img{
 
 <li><a onclick="seychelles();">SEYCHELLES</a></li>&nbsp;
 
-<li><a onclick="sieraLeone();">SIERA LEONE</a></li>&nbsp;
+<li><a onclick="sierraLeone();">SIERRA LEONE</a></li>&nbsp;
 
 <li><a onclick="somalia();">SOMALIA</a></li>&nbsp;
 

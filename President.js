@@ -1,3 +1,29 @@
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+//instruction modal
+$(document).ready(function() 
+{ 
+$("#myModalE").modal('show'); 
+}); 
+
 //redirection using open() function 
 function algeria(){  
 open("https://salmandascript.github.io/Algeria/algeria.html");
@@ -47,6 +73,9 @@ function drc(){
 open("https://salmandascript.github.io/DRC/DRC.html");
 }
 
+function rcongo(){  
+open("https://salmandascript.github.io/RepublicOfTheCongo/RepublicOfTheCongo.html");
+}
 
 function djibouti(){  
 open("https://salmandascript.github.io/Djibouti/Djibout.html");
@@ -74,6 +103,10 @@ open("https://salmandascript.github.io/Ethiopia/Ethiopia.html");
 
 function gabon(){  
 open("https://salmandascript.github.io/Gabon/Gabon.html");
+}
+
+function theGambia(){  
+open("https://salmandascript.github.io/TheGambia/TheGambia.html");
 }
 
 function ghana(){  
@@ -136,7 +169,7 @@ function mozambique(){
 open("https://salmandascript.github.io/Mozambique/Mozambique.html");
 }
 
-function Namibia(){  
+function namibia(){  
 open("https://salmandascript.github.io/Namibia/Namibia.html");
 }
 
@@ -148,15 +181,11 @@ function nigeria(){
 open("https://salmandascript.github.io/Nigeria/Nigeria.html");
 }
 
-function republicOfTheCongo(){  
-open("https://salmandascript.github.io/RepublicOfTheCongo/RepublicOfTheCongo.html");
-}
-
 function rwanda(){  
 open("https://salmandascript.github.io/Rwanda/Rwanda.html");
 }
 
-function saoTome&Principe(){  
+function saoTome(){  
 open("https://salmandascript.github.io/SaoTome&Principe/SaoTome&Principe.html");
 }
 
@@ -192,10 +221,6 @@ function tanzania(){
 open("https://salmandascript.github.io/Tanzania/Tanzania.html");
 }
 
-function theGambia(){  
-open("https://salmandascript.github.io/TheGambia/TheGambia.html");
-}
-
 function togo(){  
 open("https://salmandascript.github.io/Togo/Togo.html");
 }
@@ -216,22 +241,27 @@ function zimbabwe(){
 open("https://salmandascript.github.io/Zimbabwe/Zimbabwe.html");
 }
 
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
+//function to open portal 
+function africaOnline(){
+open("https://salmandascript.github.io/AfricaOnline/index.html");
+}
 
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
+//function to open help
+function help(){
+open("https://salmandascript.github.io/Help/Help.html");
+}
+
+//function to open contacts
+function contact(){
+open("https://salmandascript.github.io/Contact/Contact.html");
+}
+
+//function to open Terms of service 
+function termsOfService(){
+open("https://salmandascript.github.io/TermsOfService/Service.html");
+}
+
+//function to open About
+function about(){
+open("https://salmandascript.github.io/About/About.html");
 }
