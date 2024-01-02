@@ -257,7 +257,7 @@ open("https://salmandascript.github.io/AboutSalmanda/contact.html");
 }
 
 //function to open Terms of service 
-function termsOfService(){
+function Service(){
 open("https://salmandascript.github.io/AboutSalmanda/Service.html");
 }
 
