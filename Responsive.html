@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Africa Online</title>
+	 <meta charset="UTF-8"/>
+ <!--<meta http-equiv="refresh" content="60"/>-->
+ 		<meta name="description" content="Africa Online"/>
+
+<meta name="keywords" content="President, Africa, Online, Head of State,"/>
+
+<meta name="Author" content="Salmanda"/>
+
+<meta name="revised" content="Africa Online, 4/11/2024"/>
+ 
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    
+    <meta name="mobile-web-app-capable" content="yes"/>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <meta name="msapplication-starturl" content=""/>
+    
+    <meta name="theme-color" content="teal"/>
+  
+  <link rel="icon" type="image" href="flag.png"/>
+  
+	
+	 <link rel="stylesheet" href="Responsive.css" type="text/css"/>
+		 	
+		 	 <link rel="icon" type="image" href="papirus.png"/>
+
+<meta name="viewport" content=
+"width=device-width, initial-scale=
+1.0">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+html {
+font-family:georgia;
+}
+
+
+.header {
+    background-color: teal;
+    color: orange;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu li {
+
+padding: 8px;
+margin-bottom: 7px;
+background-color :maroon;
+color: orange;
+box-shadow: 0 1px 3px rgba
+(0,0,0,0.12), 0 1px 2px 
+rgba(0,0,0,0.24);
+
+}
+
+.menu li:hover {
+ background-color: teal;
+}
+
+
+.aside {
+    background-color: teal;
+padding: 15px;
+color: orange;
+text-align: center;
+font-size: 14px;
+box-shadow: 0 1px 3px rgba
+(0,0,0,0.12), 0 1px 2px 
+rgba(0,0,0,0.24);
+}
+
+
+.footer {
+    background-color: maroon;
+    color: orange;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+
+@media only screen and 
+(min-width:600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+
+@media only screen and 
+(min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+.picture{
+height: 100px;
+width: 100px;
+border-radius: 150px;
+margin-left: 8px;
+margin-top: 4px;
+border: 3px solid #ddd;
+padding: 3px;
+}
+
+body{
+	background: linear-gradient(to right, maroon, teal);
+}
+
+ol{
+	color: white;
+	border: groove;
+	border-radius:10pt;
+	}
+	
+li {
+	background-color: white;
+	border-radius: 6pt;
+	border: groove;
+}
+
+span{
+	color: white;
+	background: orange;
+	border-radius: 4pt;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>HEADS OF STATE</h1>
+</div>
+
+<div class="row">
+<div class="col-3 col-m-3 menu">
+<ul>
+<li><a onclick="home(),africaOnline();">HOME</a></li>
+
+<li><a onclick="help();">
+	HELP</a></li>
+	
+<li><a onclick="about();">
+	ABOUT</a></li>
+	
+<li><a onclick="contact();">
+	CONTACT</a></li>
+	
+<li><a onclick="Service();">
+	TERMS OF SERVICE</a></li>
+</ul>
+</div>
+
+<div class="col-6 col-m-9">
+	<div align="center">
+        <details><p align="center" style="color:orange"><i>The App is still under Development, guess or click a country randomly, send me feedback, wishing you all the best</i></p></details></div>&nbsp;
+        
+        <!--search input tag -->
+<input type="text" id="myInput" onkeyup="myFunction()"  placeholder="Search for a Country here...">  
+ 
+<ol id = "myUL">&nbsp;
+
+<li><a onclick="algeria();">ALGERIA</a></li>&nbsp;
+
+<li><a onclick="angola();">ANGOLA</a></li>&nbsp;
+
+<li><a onclick="benin();">BENIN</a></li>&nbsp;
+
+<li><a onclick="botswana();">BOTSWANA</a></li>&nbsp;
+
+<li><a onclick="burkinaFaso();">BURKINA FASO</a></li>&nbsp;
+
+<li><a onclick="burundi();">BURUNDI</a></li>&nbsp;
+
+<li><a onclick="cameroon();">CAMEROON</a></li>&nbsp;
+
+<li><a onclick="capeVerde();">CAPE VERDE</a></li>&nbsp;
+
+<li><a onclick="centralAfricanRepublic();">C.A.R.</a></li>&nbsp;
+
+<li><a onclick="chad();">CHAD</a></li>&nbsp;
+
+<li><a onclick="comoros();">COMOROS</a></li>&nbsp;
+
+<li><a onclick="drc();">D.R.C.</a></li>&nbsp;
+
+<li><a onclick="djibouti();">DJIBOUTI</a></li>&nbsp;
+
+<li><a onclick="egypt();">EGYPT</a></li>&nbsp;
+
+<li><a onclick="equatorialGuinea();">EQUATORIAL GUINEA</a></li>&nbsp;
+
+<li><a onclick="eritrea();">ERITREA</a></li>&nbsp;
+
+<li><a onclick="eswatini();">ESWATINI</a></li>&nbsp;
+
+<li><a onclick="ethiopia();">ETHIOPIA</a></li>&nbsp;
+
+<li><a onclick="gabon();">GABON</a></li>&nbsp;
+
+<li><a onclick="theGambia();">THE GAMBIA</a></li>&nbsp;
+
+<li><a onclick="ghana();">GHANA</a></li>&nbsp;
+
+<li><a onclick="guinea();">GUINEA</a></li>&nbsp;
+
+<li><a onclick="guineaBissau();">GUINEA BISSAU</a></li>&nbsp;
+
+<li><a onclick="ivoryCoast();">IVORY COAST</a></li>&nbsp;
+
+<li><a onclick="kenya();">KENYA</a></li>&nbsp;
+
+<li><a onclick="lesotho();">LESOTHO</a></li>&nbsp;
+
+<li><a onclick="liberia();">LIBERIA</a></li>&nbsp;
+
+<li><a onclick="libya();">LIBYA</a></li>&nbsp;
+
+<li><a onclick="madagascar();">MADAGASCAR</a></li>&nbsp;
+
+<li><a onclick="malawi();">MALAWI</a></li>&nbsp;
+
+<li><a onclick="mali();">MALI</a></li>&nbsp;
+
+<li><a onclick="mauritania();">MAURITANIA</a></li>&nbsp;
+
+<li><a onclick="mauritius();">MAURITIUS</a></li>&nbsp;
+
+<li><a onclick="morocco();">MOROCCO</a></li>&nbsp;
+
+<li><a onclick="mozambique();">MOZAMBIQUE</a></li>&nbsp;
+
+<li><a onclick="namibia();">NAMIBIA</a></li>&nbsp;
+
+<li><a onclick="niger();">NIGER</a></li>&nbsp;
+
+<li><a onclick="nigeria();">NIGERIA</a></li>&nbsp;
+
+<li><a onclick="rcongo();">REPUBLIC OF THE CONGO</a></li>&nbsp;
+
+<li><a onclick="rwanda();">RWANDA</a></li>&nbsp;
+
+<li><a onclick="saoTome();">SAO TOME & PRINCIPE</a></li>&nbsp;
+
+<li><a onclick="senegal();">SENEGAL</a></li>&nbsp;
+
+<li><a onclick="seychelles();">SEYCHELLES</a></li>&nbsp;
+
+<li><a onclick="sierraLeone();">SIERRA LEONE</a></li>&nbsp;
+
+<li><a onclick="somalia();">SOMALIA</a></li>&nbsp;
+
+<li><a onclick="southAfrica();">SOUTH AFRICA</a></li>&nbsp;
+
+<li><a onclick="southSudan();">SOUTH SUDAN</a></li>&nbsp;
+
+<li><a onclick="sudan();">SUDAN</a></li>&nbsp;
+
+<li><a onclick="tanzania();">TANZANIA</a></li>&nbsp;
+
+<li><a onclick="togo();">TOGO</a></li>&nbsp;
+
+<li><a onclick="tunisia();">TUNISIA</a></li>&nbsp;
+
+<li><a onclick="uganda();">UGANDA</a></li>
+&nbsp;
+
+<li><a onclick="zambia();">ZAMBIA</a></li>&nbsp;
+
+<li><a onclick="zimbabwe();">ZIMBABWE</a></li>&nbsp;</ol></div></div>
+
+<div class="col-3 col-m-12">
+<div class="aside">
+<h2>Capital Cities</h2>
+<p><span><a onclick="capitalCities();">
+	Know the Capital Cities of Africa</a></span></p>
+
+<h2>App Download</h2>
+<a
+href download="AfricaOnline.signed.zip"><span>Download & install App
+</span></a></i>
+
+
+<p></p>
+
+<h2>Home Page</h2>
+<p><a onclick="home(),africaOnline();"><span>
+	&laquo	Back to Home Page</span></p>
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+<p>&copy2024 | All Rights Reserved | Salmanda</p>
+</div>
+
+<script src="Responsive.js"></script>
+</body>
+</html>
